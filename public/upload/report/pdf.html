@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Kartu Persediaan Barang</title>
+            <!-- 
+            harusnya
+            .header {top: -50px} 
+            .footer {bottom: -50px} 
+            -->
+            <style>
+                body { 
+                    font-family: 'Times New Roman', Times, serif; 
+                    font-size: 12pt;
+                }
+                .header { text-align: center; position: fixed; top: -13px; left: 0; right: 0; height: 50px; }
+                .footer { text-align: center; position: fixed; bottom: 0; left: 0; right: 0; height: 50px; background-color: #f2f2f2; line-height: 35px; }
+                .content { margin-top: 60px; }
+                .table-content { width: 100%; border-collapse: collapse; margin-top: 20px; }
+                .table-content, th, td { border: 1px solid black; padding: 8px; text-align: left; }
+                .table-content th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>Kartu Persediaan Barang</h1>
+                <hr style="margin-top:-10px;">
+            </div>
+
+            <div class="content">
+                <h2>Title of the PDF</h2>
+                <p>This is the main content of the PDF. You can style this content as needed using CSS.</p>
+
+                <table class="table-content">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Smith</td>
+                            <td>User</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footer">
+                <p>Footer - Page {PAGE_NUM} of {PAGE_COUNT}</p>
+            </div>
+        </body>
+        </html>
